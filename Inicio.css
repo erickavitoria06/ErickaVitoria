@@ -1,0 +1,169 @@
+/* GERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #8ebbff;
+  color: #444;
+}
+
+/* BANNER */
+
+
+
+.banner {
+  
+  width: 100%;
+
+}
+.banner img{
+
+width: 100%;
+height: auto;
+
+}
+
+
+
+
+/* MENU */
+nav {
+  background: #aedfff;
+  padding: 15px 0;
+  font-family: "Times New Roman", serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  background: #3f5ad3;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgb(1, 72, 179);
+}
+
+/* CONTEÚDO */
+#conteudo {
+  max-width: 500px;
+  box-shadow: 5px 5px 15px rgba(0, 109, 252, 0.85);
+  margin: 50px auto 70px auto;
+  background: #000;
+  padding: 20px;
+  border-radius: 60px;
+}
+
+.caixa-menor {
+  background: #a8e3ff;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px rgba(238, 211, 240, 0.85);
+}
+
+/* TÍTULO */
+#titulo {
+  text-align: center;
+  color: #fff;
+  margin: 20px 0;
+  font-size: 30px;
+  font-family: "Times New Roman", serif;
+}
+
+/* RODAPÉ */
+#rodape {
+  background: #27cee4;
+  color: #fff;
+  padding: 15px 10px;
+  margin-top: 40px;
+}
+
+#rodape .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+#rodape p {
+  margin: 5px 0;
+  flex: 1 1 200px;
+}
+
+/* RESPONSIVIDADE  */
+
+/* Tablets */
+@media (max-width: 992px) {
+  #titulo {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #conteudo {
+    max-width: 90%;
+    margin: 30px auto;
+    border-radius: 30px;
+  }
+
+  .caixa-menor {
+    padding: 15px;
+  }
+
+  #rodape .footer-container {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li a {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #titulo {
+    font-size: 1.3em;
+  }
+
+  #conteudo {
+    max-width: 95%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  #rodape .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
