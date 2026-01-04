@@ -1,0 +1,160 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* NAVEGAÇÃO / HEADER */
+nav {
+    background: #163052;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #00ffcc; /* Linha de detalhe tecnológica */
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* TAMANHO DA IMAGEM CONFORME SEU PADRÃO ORIGINAL */
+.img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; /* Mantém redonda */
+    object-fit: cover;
+    border: 2px solid #00ffcc; /* Opcional: borda para destacar a foto */
+}
+
+.menu-title {
+    margin-left: 15px;
+    font-size: 1.8em;
+    font-family: "Times New Roman", serif;
+}
+
+/* LINKS DO MENU */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background: #000000;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: rgb(2, 92, 228);
+    color: #ffffff;
+}
+
+/* CONTEÚDO PRINCIPAL */
+#conteudo {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#title {
+    font-size: 1.5em;
+    color: #00ffcc;
+    margin-bottom: 20px;
+}
+
+#paragrafo {
+    text-align: justify;
+    color: #dddddd;
+}
+
+/* RODAPÉ PADRONIZADO */
+#rodape {
+    background: #1a1d1d;
+    color: #ffffff;
+    padding: 30px 10px;
+    margin-top: 60px; /* Removido os 50% para não quebrar o layout */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-box h4 {
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+#rodape a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#rodape a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 0.8em;
+    border-top: 1px solid #333;
+}
+
+/* RESPONSIVIDADE (Celulares) */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .img {
+        width: 80px; /* Reduz um pouco no celular para caber melhor */
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .menu-title {
+        margin-left: 0;
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav a {
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
