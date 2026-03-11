@@ -4,72 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DevFullStack | Portifólio</title>
     <link rel="stylesheet" href="style.css">
-    <title>CV - Ericka vitoria</title>
 </head>
 
 <body>
+    <div class="particulas"></div>
 
-    <!-- MENU DE NAVEGAÇÃO -->
 
-    <nav>
-        <div class="header-container">
-            <img src="Imagens/imglogo.jpg" class="img">
-            <p class="menu-title">Ericka Vitória</p>
-        </div>
-        <ul>
-            <li><a href="index.html"> Sobre mim</a></li>
-            <li><a href="Profissionalizações.html"> Profissionalização</a></li>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#certificacao" class="menu-link">Certificação</a>
+            </li>
         </ul>
     </nav>
 
-    <!-- CONTEÚDO DO SITE -->
+    <main id="inicio" class="cabecalho">
 
-    <div id="conteudo">
-        <p id="title">Bem vindos ao meu currículo online.</p>
-        <br>
-        <p id="paragrafo">
-            Me chamo Ericka Vitória, atualmente estou com 19 anos de idade, profissional técnica em Informática recém
-            formada com sólida base em desenvolvimento de aplicativos e atualmente cursando
-            o 2º semestre de Sistemas de Informação na |Instituição Faci Wyden em Belém-PA. Combinando o conhecimento
-            técnico prático com a visão estratégica
-            acadêmica, busco oportunidades para aplicar minhas competências em programação e resolução de problemas. Sou
-            movida pelo aprendizado contínuo e pelo desejo de contribuir para o sucesso da equipe através de soluções
-            eficientes e código de qualidade. Busco minha primeira grande experiência no mercado corporativo de
-            tecnologia para expandir meus horizontes e gerar valor real ao negócio. </p>
+        <img src="Imagens/imglogo.jpg" alt="Foto de Ericka Vitória" class="foto-perfil">
+        <h1>Ericka Vitória</h1>
+        <p class="sub-titulo">Desenvolvedora FullStack iniciante</p>
 
-    </div>
+    </main>
 
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
 
-    <!-- RODAPÉ DO SITE -->
-    <footer id="rodape">
-        <div class="footer-container">
-            <div class="footer-box">
-                <h4>WhatsApp</h4>
-                <p>
-                    <a href="https://wa.me/5591992520680?text=Olá Ericka, vi seu currículo online, gostaria de mais informações!"
-                        target="_blank">
-                        Fale comigo no WhatsApp
-                    </a>
-                </p>
+            <p class="sobre-paragrafo"> Desenvolvedora iniciante, com formação técnica em Informática, apaixonada por
+                aprender e agregar ao
+                ambiente que atuo. </p>
+
+        </div>
+
+    </section>
+
+    <section id="certificacao" class="certificacao">
+        <h2 class="certificacao-title">Minhas certificações</h2>
+
+        <div class="certificacao-caixa">
+
+            <div class="certificca-card">
+
+                <div class="caixa-texto">
+                    <h3 class="info-academico">Acadêmico</h3>
+
+                    <p class="paragrafo-info">
+                        <strong>Curso Téc. Informática</strong><br>
+                        Instituição: EETEPA - Magalhães Barata<br>
+                        Status: concluído (2022-2024)
+                    </p>
+
+                    <p class="paragrafo-info">
+                        <strong>Bacharelado em Sistemas de Informação</strong><br>
+                        Instituição: Faci Wyden<br>
+                        Status: em andamento | previsão de conclusão: 30 de junho de 2029
+                    </p>
+                </div>
             </div>
 
-            <div class="footer-box">
-                <h4>E-mail</h4>
-                <p>erickavitoria4@gmail.com</p>
+            <div class="certificca-card">
+
+                <div class="caixa-texto">
+                    <h3 class="info-academico">Cursos</h3>
+
+                    <p class="paragrafo-info">
+                        <strong>Programação de Aplicativos</strong><br>
+                        Instituição: Prepara Cursos<br>
+                        Status: concluído (2023-2024)
+                    </p>
+
+                    <p class="paragrafo-info">
+                        <strong>Preparatório Primeiro Emprego</strong><br>
+                        Instituição: Prepara Cursos<br>
+                        Status: concluído (2021-2023)
+                    </p>
+                </div>
             </div>
 
-            <div class="footer-box">
-                <h4>Redes Sociais</h4>
-                <a href="link-linkedin" target="_blank" class="social-link">LinkedIn</a>
+            <div class="certificca-card">
+
+                <div class="caixa-texto">
+                    <h3 class="info-academico">Desenvolvimento</h3>
+                    <p class="paragrafo-info">
+                        <strong>Criando um projeto com interface gráfica (Python/Kivy)</strong><br>
+                        Instituição: Fundação Bradesco<br>
+                        Status: concluído (Janeiro de 2026)
+                    </p>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
+    <!--CONTATOS-->
 
-    <div class="footer-bottom">
-        <p>&copy; 2026 C.V. Todos os direitos reservados. | Desenvolvido por Ericka Vitória</p>
-    </div>
-    </footer>
+    <section id="contatos" class="contatos">
+
+        <h2 class="contatos-titulo">Entre em contato</h2>
+        <form class="form-contato" id="form">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="btn-form" onclick="enviarWhats(event)">Enviar WhatsApp</button>
+
+        </form>
+
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault()
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5591992520680'
+
+            const texto = `Olá, me chamo ${nome}, ${mensagem}`
+            const msgformatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}/?text=${msgformatada}`
+
+            window.open(url, '_blank')
+        }
+        
+    </script>
+
 </body>
 
 </html>
